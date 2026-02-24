@@ -132,7 +132,7 @@
 
     <script>
         // Konfigurasi - GANTI URL INI DENGAN URL WEB APP ANDA
-        const GOOGLE_APPS_SCRIPT_URL = 'https://script.google.com/macros/library/d/1cUCf7WKuVd9CrvJppjaDaDXnaYymf9r2D2Of1ot_B3qu_E1L3gU09ywA/1';
+        const GOOGLE_APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw-AD4x1u5Xe1BylYyVJXR-QimbC-GgrDA6ph-DD-yOWfENnw7z3mv345AG_KtwKaIt/exec';
         
         // State management
         let expenses = [];
@@ -231,7 +231,7 @@
                 const response = await fetch(GOOGLE_APPS_SCRIPT_URL, {
                     method: 'POST',
                     headers: {
-                        'Content-Type': 'application/json',
+                        'Content-Type': 'text/plain;charset=utf-8',
                     },
                     body: JSON.stringify(expenseData)
                 });
