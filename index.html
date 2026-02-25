@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buku Kas Keluarga Maul&Ninda</title>
+    <title>Buku Kas Keluarga Maul & Ninda</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            /* GANTI URL DI BAWAH DENGAN DIRECT LINK GOOGLE DRIVE KAMU */
+            /* GANTI URL DI BAWAH DENGAN DIRECT LINK GAMBAR DRIVE ANDA */
             background-image: url('https://lh3.googleusercontent.com/u/0/d/1KDGszfWRMNdfAepv-C8UQInlcWx7Kao0');
             background-size: cover;
             background-attachment: fixed;
             background-position: center;
         }
-        /* Glassmorphism effect agar kartu tembus pandang tapi tetap terbaca */
         .glass-card {
             background: rgba(255, 255, 255, 0.9);
             backdrop-filter: blur(8px);
@@ -34,7 +33,7 @@
 <body class="min-h-screen">
     <div class="container mx-auto px-4 py-8 max-w-5xl">
         <div class="text-center mb-8">
-            <h1 class="text-3xl font-bold text-slate-800">💰Buku Kas Rumah Tangga Maul & Ninda</h1>
+            <h1 class="text-3xl font-bold text-black">💰 Buku Kas Rumah Tangga Maul & Ninda</h1>
             <div id="status" class="mt-2"></div>
         </div>
 
@@ -50,21 +49,21 @@
                     <input type="date" id="date" class="w-full p-3 border rounded-xl outline-none focus:ring-2 focus:ring-blue-500 transition-all" required>
                     
                     <select id="category" class="w-full p-3 border rounded-xl outline-none focus:ring-2 focus:ring-blue-500 transition-all" required>
-    <option value="">Pilih Kategori</option>
-    <option value="🏠 Kebutuhan Rumah">🏠 Kebutuhan Rumah</option>
-    <option value="🍚 Makan & Minum">🍚 Makan & Minum</option>
-    <option value="🚗 Transportasi">🚗 Transportasi</option>
-    <option value="🎓 Pendidikan">🎓 Pendidikan</option>
-    <option value="🏥 Kesehatan">🏥 Kesehatan</option>
-    <option value="🛍 Kebutuhan Pribadi">🛍 Kebutuhan Pribadi</option>
-    <option value="🎉 Hiburan">🎉 Hiburan</option>
-    <option value="💳 Cicilan">💳 Cicilan</option>
-    <option value="💰 Tabungan">💰 Tabungan</option>
-    <option value="✨ Sedekah">✨ Sedekah</option>
-    <option value="📦 Lainnya">📦 Lainnya</option>
-</select>
+                        <option value="">Pilih Kategori</option>
+                        <option value="🏠 Kebutuhan Rumah">🏠 Kebutuhan Rumah</option>
+                        <option value="🍚 Makan & Minum">🍚 Makan & Minum</option>
+                        <option value="🚗 Transportasi">🚗 Transportasi</option>
+                        <option value="🎓 Pendidikan">🎓 Pendidikan</option>
+                        <option value="🏥 Kesehatan">🏥 Kesehatan</option>
+                        <option value="🛍 Kebutuhan Pribadi">🛍 Kebutuhan Pribadi</option>
+                        <option value="🎉 Hiburan">🎉 Hiburan</option>
+                        <option value="💳 Cicilan">💳 Cicilan</option>
+                        <option value="💰 Tabungan">💰 Tabungan</option>
+                        <option value="✨ Sedekah">✨ Sedekah</option>
+                        <option value="📦 Lainnya">📦 Lainnya</option>
+                    </select>
 
-                    <input type="text" id="desc" placeholder="Keterangan (Contoh: Beli Beras / Token Listrik)" class="w-full p-3 border rounded-xl outline-none focus:ring-2 focus:ring-blue-500 transition-all" required>
+                    <input type="text" id="desc" placeholder="Keterangan (Contoh: Beli Beras)" class="w-full p-3 border rounded-xl outline-none focus:ring-2 focus:ring-blue-500 transition-all" required>
                     
                     <input type="text" id="amount" placeholder="Jumlah (Rp)" class="w-full p-3 border rounded-xl outline-none focus:ring-2 focus:ring-blue-500 transition-all" required>
                     
@@ -89,7 +88,6 @@
     </div>
 
     <script>
-        // MASUKKAN URL GOOGLE APPS SCRIPT ANDA DI SINI
         const URL = 'https://script.google.com/macros/s/AKfycbyzKa8EKKVS_tIgwdcy1rHXjydIbGjOLaKSvkgYwo5JbyBdRQqw5M74kY7r-EAnDwqX/exec';
 
         let expenses = [];
@@ -202,7 +200,7 @@
                     labels: cats, 
                     datasets: [{ 
                         data: data, 
-                        backgroundColor: ['#2563eb', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6', '#ec4899', '#06b6d4', '#f97316', '#64748b'],
+                        backgroundColor: ['#2563eb', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6', '#ec4899', '#06b6d4', '#f97316', '#64748b', '#14b8a6', '#6366f1'],
                         borderWidth: 0
                     }] 
                 },
